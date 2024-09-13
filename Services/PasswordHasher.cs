@@ -65,7 +65,7 @@ namespace MiniProject_GMD.Services
             var tokenDescriptor = new SecurityTokenDescriptor
             {
                 Subject = identity,
-                Expires = DateTime.Now.AddDays(5),
+                Expires = DateTime.Now.AddDays(15),
                 SigningCredentials = credentials
             };
             var token = jwtTokenHandler.CreateToken(tokenDescriptor);

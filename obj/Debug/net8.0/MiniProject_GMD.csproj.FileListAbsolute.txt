@@ -254,3 +254,4 @@ C:\Users\chaimae\Desktop\TE\.net\MiniProject_GMD\MiniProject_GMD\obj\Debug\net8.
 C:\Users\chaimae\Desktop\TE\.net\MiniProject_GMD\MiniProject_GMD\obj\Debug\net8.0\ref\MiniProject_GMD.dll
 C:\Users\chaimae\Desktop\TE\.net\MiniProject_GMD\MiniProject_GMD\bin\Debug\net8.0\Bogus.dll
 C:\Users\chaimae\Desktop\TE\.net\MiniProject_GMD\MiniProject_GMD\bin\Debug\net8.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+C:\Users\chaimae\Desktop\TE\.net\MiniProject_GMD\MiniProject_GMD\obj\Debug\net8.0\MiniProject_GMD.sourcelink.json

@@ -115,7 +115,7 @@ namespace MiniProject_GMD.Controllers
                 return BadRequest();
 
             var user = await _context.Users
-                .FirstOrDefaultAsync(x => x.Email == userObj.Email);
+                .FirstOrDefaultAsync(x => x.Username == userObj.Username);
 
             if (user == null)
                 return NotFound(new { Message = "User not found!" });
@@ -162,6 +162,16 @@ namespace MiniProject_GMD.Controllers
             var userEmail = HttpContext.User.Claims.FirstOrDefault(c => c.Type == ClaimTypes.Email)?.Value;
 
             var user = await _context.Users.Where(user => user.Email != userEmail).ToListAsync();
+
+            return Ok(user);
+        }
+
+
+        [HttpGet("all")]
+        public async Task<ActionResult<User>> GetAll()
+        {
+
+            var user = await _context.Users.ToListAsync();
 
             return Ok(user);
         }

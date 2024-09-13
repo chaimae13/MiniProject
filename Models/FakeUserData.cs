@@ -6,7 +6,7 @@ namespace MiniProject_GMD.Models
         Faker<User> UserFakeModel;
         public FakeUserData()
         {
-          Randomizer.Seed = new Random(123);
+          Randomizer.Seed = new Random();
           UserFakeModel = new Faker<User>()
             .RuleFor(u => u.FirstName, f => f.Name.FirstName())
             .RuleFor(u => u.LastName, f => f.Name.LastName())
